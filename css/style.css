@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap');
+
+* {
+    font-family: 'Alegreya', serif !important;
+}
+
+a {
+    color: white !important;
+    text-decoration: none;
+    /*font-size: 35px !important;*/
+
+}
+
+.bg-purple {
+    background-image: url("../images/i.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.type-text::after {
+    content: '';
+    border-left: 5px solid red;
+    margin-left: 5px;
+
+    animation: blink .3s infinite;
+    ;
+}
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.custom-div {
+    width: 20%;
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+@media screen and (max-width:900px) {
+    .custom-div {
+        width: 33%;
+    }
+
+    .search-box {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    small {
+        font-size: 2rem !important;
+    }
+
+    .search-box {
+        width: 100% !important;
+    }
+
+    .custom-div {
+        width: 50%;
+    }
+}
